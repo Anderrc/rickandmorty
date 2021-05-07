@@ -1,0 +1,72 @@
+@import '../../../styles/variables.scss';
+
+.o-character{
+    width: 48%;
+    margin: 1%;
+    border-radius: 20px;
+    background: rgb(60, 62, 68);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    min-width: 600px;
+
+    @include from($large){
+        width: 100%;
+        min-width: 200px;
+    }
+
+    @include from($semi-small){
+        height: auto;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+
+    .o-character-img{
+        height: 100%;
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px 0px 0px 20px ;
+            // border-radius: 20px;
+
+            @include from($semi-small){
+                width: 100%;
+                border-radius: 20px 20px 0px 0px ;
+            }
+        }
+    }
+    
+    .o-character-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .o-character-container-title{
+            font-size: 1.5rem;
+            width: 100%;
+            height: 50px;
+            text-decoration: none;
+            color: white;
+
+            &:hover{
+                color: rgb(255, 152, 0);
+            }
+        }
+        
+        .o-character-container-data{
+            display: flex;
+            margin: 10px 0px;
+            flex-direction: column;
+
+            .o-character-container-data-title{
+                color: rgb(158, 158, 158);
+            }
+
+            .o-character-container-data-text{
+                color: rgb(245, 245, 245);
+            }
+        }
+    }
+}

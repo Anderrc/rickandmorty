@@ -1,0 +1,21 @@
+.m-status{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .m-status-circle{
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: gray;
+        margin-right: 5px;
+    }
+
+    .Dead{
+        background: rgb(214, 61, 46) !important;
+    }
+
+    .Alive {
+        background: rgb(85, 204, 68) !important;
+    }
+}

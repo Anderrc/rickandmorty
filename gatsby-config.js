@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/rick-y-morty.png",
       },
     },
     "gatsby-plugin-sharp",
@@ -22,6 +22,27 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'MyNodes',
+        imagePath: 'imageUrl',
+        // OPTIONAL: Name you want to give new image field on the node.
+        // Defaults to 'localImage'.
+        name: 'allItemImages',
+      },
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: 'RICKANDMORTY',
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: 'rickandmorty',
+        // Url to query from
+        url: 'https://rickandmortyapi.com/graphql',
+      },
     },
   ],
 };

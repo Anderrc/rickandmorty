@@ -1,0 +1,31 @@
+.o-content-index{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    .o-content-index-title{
+        padding-top: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    .o-content-index-content{
+        padding-top: 30px;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+
+        a{
+            color: white;
+        }
+    }
+    .o-content-index-charactes{
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
