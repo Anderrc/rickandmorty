@@ -1,12 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: "rickandmorty",
+    siteUrl: `https://anderrc.github.io/rickandmorty/`,
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-sitemap",
+    
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -19,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-remote-images`,
       options: {
-        nodeType: 'MyNodes',
+        nodeType: 'rickandmorty',
         imagePath: 'imageUrl',
         // OPTIONAL: Name you want to give new image field on the node.
         // Defaults to 'localImage'.
