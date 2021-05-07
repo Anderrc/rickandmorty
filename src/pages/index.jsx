@@ -5,7 +5,7 @@ import './index.scss';
 import image from '../images/rick-y-morty.png';
 import Seo from '../components/organims/SEO/SEO';
 
-const Index = props => {
+const IndexPage = props => {
     return ( 
         <Layout>
             <Seo image={image} title="Rick and morty - practica con gatsby" url="http://localhost:8000/" description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
@@ -14,4 +14,4 @@ const Index = props => {
      );
 }
  
-export default Index;
+export default IndexPage;
