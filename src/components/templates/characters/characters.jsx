@@ -32,12 +32,12 @@ const Characters = props => {
                 <div className="t-characters-pagination">
                     <div className="t-characters-pagination-buttons">
                         { pageContext.page !== 1 ? 
-                            <a href={"/personajes/"+(pageContext.page-1)} className="t-characters-pagination-buttons-button">Anterior</a>:
+                            <a href={"https://anderrc.github.io/rickandmorty/personajes/"+(pageContext.page-1)} className="t-characters-pagination-buttons-button">Anterior</a>:
                             ""             
                         }
                         
                         { pageContext.page !== pageContext.totalPage ?
-                            <a href={"/personajes/"+(pageContext.page+1)} className="t-characters-pagination-buttons-button">Siguiente</a>:
+                            <a href={"https://anderrc.github.io/rickandmorty/personajes/"+(pageContext.page+1)} className="t-characters-pagination-buttons-button">Siguiente</a>:
                             ""
                         }
                     </div>

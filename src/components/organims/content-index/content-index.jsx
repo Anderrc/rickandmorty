@@ -42,7 +42,7 @@ const ContentIndex = props => {
                 </p>
 
                 <p>
-                    Ver listado de personajes <a href="/personajes/1">Aquí</a>
+                    Ver listado de personajes <a href="https://anderrc.github.io/rickandmorty/personajes/1">Aquí</a>
                 </p>
                 
             </div>
