@@ -12,7 +12,7 @@ const Character = props => {
                 <img src={image} alt={name} />
             </div>
             <div className="o-character-container">
-                <a href={"/personaje/"+id} className="o-character-container-title"><h2> {name} </h2></a>
+                <a href={"https://anderrc.github.io/rickandmorty/personaje/"+id} className="o-character-container-title"><h2> {name} </h2></a>
                 <Status info={props.info} />
                 <div className="o-character-container-data"> 
                     <span className="o-character-container-data-title">

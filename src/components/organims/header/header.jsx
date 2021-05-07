@@ -10,8 +10,8 @@ const Header = props => {
             </div>
             <nav className="o-header-nav">
                 <ul className="o-header-nav-items">
-                    <li className="o-header-nav-items-item"><a href="/">Inicio</a></li>
-                    <li className="o-header-nav-items-item"><a href="/personajes/1">Personajes</a></li>
+                    <li className="o-header-nav-items-item"><a href="https://anderrc.github.io/rickandmorty/">Inicio</a></li>
+                    <li className="o-header-nav-items-item"><a href="https://anderrc.github.io/rickandmorty/personajes/1">Personajes</a></li>
                 </ul>
             </nav>
         </header>

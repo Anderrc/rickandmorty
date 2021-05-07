@@ -8,7 +8,7 @@ import Seo from '../components/organims/SEO/SEO';
 const IndexPage = props => {
     return ( 
         <Layout>
-            <Seo image={image} title="Rick and morty - practica con gatsby" url="http://localhost:8000/" description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
+            <Seo image={image} title="Rick and morty - practica con gatsby" url="https://anderrc.github.io/rickandmorty/" description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
             <ContentIndex></ContentIndex>
         </Layout>
      );

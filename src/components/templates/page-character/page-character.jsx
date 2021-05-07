@@ -12,7 +12,7 @@ const PageCharacter = props => {
 
     return ( 
         <Layout>
-            <Seo image={image} title={name + " Rick and morty"} url={"http://localhost:8000/personaje/"+id} description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
+            <Seo image={image} title={name + " Rick and morty"} url={"https://anderrc.github.io/rickandmorty/personaje/"+id} description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
             <div className="t-character">
                 <div className="t-character-data">
                     <div className="t-character-data-img">
@@ -58,12 +58,12 @@ const PageCharacter = props => {
                 <div className="t-character-pagination">
                     <div className="t-character-pagination-buttons">
                         { parseInt(id) !== 1 ? 
-                            <a href={"/personaje/"+(parseInt(id)-1)} className="t-character-pagination-buttons-button">Anterior</a>:
+                            <a href={"https://anderrc.github.io/rickandmorty/personaje/"+(parseInt(id)-1)} className="t-character-pagination-buttons-button">Anterior</a>:
                             ""             
                         }
             
                         { parseInt(id) !== pageContext.totalCharacters ?
-                            <a href={"/personaje/"+(parseInt(id)+1)} className="t-character-pagination-buttons-button">Siguiente</a>:
+                            <a href={"https://anderrc.github.io/rickandmorty/personaje/"+(parseInt(id)+1)} className="t-character-pagination-buttons-button">Siguiente</a>:
                             ""
                         }
                     </div>

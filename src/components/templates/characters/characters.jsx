@@ -17,7 +17,7 @@ const Characters = props => {
 
     return ( 
         <Layout>
-            <Seo image={image} title={"Pagina " + pageContext.page +"- Rick and morty"} url={"http://localhost:8000/personaje/"+pageContext.page} description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
+            <Seo image={image} title={"Pagina " + pageContext.page +"- Rick and morty"} url={"https://anderrc.github.io/rickandmorty/personaje/"+pageContext.page} description="Consumo de la api https://rickandmortyapi.com con gatsby"/>
             <div className="t-characters">
                 <div className="t-characters-title">
                     <h1>Personajes de Rick y Morty</h1>
